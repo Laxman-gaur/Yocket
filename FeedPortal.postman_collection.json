@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "96013405-50f1-40fa-b521-37acfef08231",
+		"name": "FeedPortal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreatePost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"New Joining\",\r\n    \"content\" :  \"Hello, I am happy to announce this\",\r\n    \"userEmail\" : \"prateekagarwal947@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/feed/createPost",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"feed",
+						"createPost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LikePost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"postId\" : \"P-2\",\r\n    \"user2Email\" : \"prateekagarwal948@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/feed/likePost",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"feed",
+						"likePost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CommentPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"postId\" : \"P-2\",\r\n    \"comment\" :  \"I agree\",\r\n    \"user2Email\" : \"prateekagarwal947@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/feed/commentPost",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"feed",
+						"commentPost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LikeComment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"commentId\" : \"C-1\",\r\n    \"user2Email\" : \"prateekagarwal949@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/feed/likeComment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"feed",
+						"likeComment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/feed/fetchPosts?userEmail=prateekagarwal947@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"feed",
+						"fetchPosts"
+					],
+					"query": [
+						{
+							"key": "userEmail",
+							"value": "prateekagarwal947@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Likes On Post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/feed/fetchLikeOnPost?postId=P-2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"feed",
+						"fetchLikeOnPost"
+					],
+					"query": [
+						{
+							"key": "postId",
+							"value": "P-2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Comments On Post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/feed/fetchCommentOnPost?postId=P-2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"feed",
+						"fetchCommentOnPost"
+					],
+					"query": [
+						{
+							"key": "postId",
+							"value": "P-2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Likes On Comment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/feed/fetchLikeOnComment?commentId=C-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"feed",
+						"fetchLikeOnComment"
+					],
+					"query": [
+						{
+							"key": "commentId",
+							"value": "C-1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
