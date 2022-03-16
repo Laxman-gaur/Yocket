@@ -18,3 +18,21 @@ Authentication: - SQL Server Authentication <br />
 2. cd Yocket  <br />
 3. npm install  <br />
 4. npm start  <br />
+
+------------------------------------------------------------------------------------ <br />
+
+Question No: - 1
+Consider a scenario where you are a big spiderman fan and the latest spiderman
+movie has been released. You absolutely want to avoid spoilers on youtube, yet also
+browse through daily video content. You decide to make a basic script that blocks all
+spoiler videos on youtube. What should be the logic/solution to implement in this
+scenario?
+You can explain the answer in a textual format in bullet points
+
+Answer: - 
+There are multiple ways of doing this, As there are tools like Spoiler Protection 2.0 and Spoilers Blocker
+As, we have to make script for that, So I will first identify the keywords like [spiderman, spoiler]. 
+then we will find the cookies related with these key word
+document.cookie="VISITOR_INFO1_LIVE=oKckVSqvaGw; path=/; domain=.youtube.com";
+window.location.reload();
+This we have to run in our Javascript console and I think it should work.
