@@ -7,4 +7,7 @@ I have used Microsoft SQL Server. You Can find credentials of DB in .env File. (
 Also, you can find postman collection - FeedPortal.postman_collection.json
 
 # Run this project
-git clone 
+git clone https://github.com/Prateekagarwal9/Yocket.git
+cd Yocket
+npm install
+npm start
