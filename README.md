@@ -6,6 +6,13 @@ I have used Microsoft SQL Server. You Can find credentials of DB in .env File. (
 
 Also, you can find postman collection - FeedPortal.postman_collection.json  <br />
 
+------------------------------------------------------------------------------------ <br />
+I have also added DB Schema File - FeedPortal.sql (But best would be to login into the DB by SSMS - You can find DB Creds in .env file) <br />
+Note: - When Using SSMS <br />
+Server Name: - feedportal.database.windows.net,1433 <br />
+Authentication: - SQL Server Authentication <br />
+
+------------------------------------------------------------------------------------ <br />
 # Run this project
 1. git clone https://github.com/Prateekagarwal9/Yocket.git  <br />
 2. cd Yocket  <br />
