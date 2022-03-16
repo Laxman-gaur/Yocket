@@ -28,6 +28,7 @@ const createPostController = async (req, res) => {
     }
   }
 
+// This Controller is user to like a post
 const likePostController = async (req, res) => {
   try {
     logger.feedLogger.info("Request is Processing");
@@ -133,7 +134,7 @@ const fetchLikeOnPostController = async (req, res) => {
     logger.feedLogger.info("Request is Processing");
     // This is used to create stored procedure parameters.
     var requestBodyParameters = await feedService.fetchLikeOnPostParameters(req.query);
-      // This is used to call fetchPost stored procedure    
+      // This is used to call fetchLikeOnPost stored procedure    
     var likesList = await feedService.fetchLikeOnPost(requestBodyParameters);
  
     var response = {
@@ -158,7 +159,7 @@ const fetchCommentOnPostController = async (req, res) => {
     logger.feedLogger.info("Request is Processing");
     // This is used to create stored procedure parameters.
     var requestBodyParameters = await feedService.fetchCommentOnPostParameters(req.query);
-      // This is used to call fetchPost stored procedure    
+      // This is used to call fetchCommentOnPost stored procedure    
     var commentsList = await feedService.fetchCommentOnPost(requestBodyParameters);
  
     var response = {
